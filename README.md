@@ -5,4 +5,4 @@ Prerequisites:
 * Install Ansible via homebrew: brew install ansible
 
 Run the following command to set up your Mac:
-$ ansible-playbook -i inventory site.yml -c local
+$ ansible-playbook -i inventory site.yml -c local -vv
