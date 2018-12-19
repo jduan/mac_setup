@@ -1,6 +1,16 @@
 - name: Hello Ansible
   shell: echo "Hello Ansible" >> /tmp/log
 
+- name: Install cask packages
+  homebrew_cask: name={{ item }} state=present
+  with_items:
+    - java
+#     - spectacle
+#     - 1password
+#     - google-chrome
+#     - dropbox
+
+
 # You can run "brew leaves" to find out installed tools.
 - name: Install packages with homebrew
   homebrew:
@@ -41,14 +51,4 @@
       - watch
       - wget
       - yamllint
-
-# - name: Install cask packages
-#   homebrew_cask: name={{ item }} state=present
-#   with_items:
-#     - iterm2
-#     - spectacle
-#     - 1password
-#     - google-chrome
-#     - dropbox
-
 
