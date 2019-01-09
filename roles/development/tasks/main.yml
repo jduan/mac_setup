@@ -34,9 +34,11 @@
       - maven
       - mycli
       - neovim
+      - par
       - pgcli
       - pstree
       - ranger
+      - rbenv
       - reattach-to-user-namespace
       - redis
       - ripgrep
